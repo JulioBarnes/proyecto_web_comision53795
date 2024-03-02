@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+*{  
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(68, 51, 16);
+}
+.fondoMadera{
+    background-color: rgb(247, 194, 126);
+}
+
+.fondoTester{
+    padding-left: 10px; /*esto es sólo para que las letras no queden pegadas al borde*/
+    padding-bottom: 5px;
+    background-color: black;
+    .links{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .anclaheader{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+}
+.footer{
+    background-color: rgba(68, 51, 16, 0.479);
+    margin-bottom: 50px;
+    text-align: center;
+    .sectionfooter{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .h3footer{
+            padding-top: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .parrafofooter{
+            padding-bottom: 10px;
+        }
+    }
+}
+.mainindex{
+    margin-bottom: 50px;
+    text-align: center;
+    .H1index{
+        margin-top: 20px;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .h2index{
+        margin-top: 20px;
+    }
+    .parrafoindex{
+        font-weight: 500;
+        font-size: 1rem;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .enlacepropiedadesindex{
+        margin-top: 20px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        width: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 6px 6px 6px 6px;
+    }
+}
+.mainproyecto{
+    margin-bottom: 50px;
+    text-align: center;
+    .H1proyecto{
+        margin-top: 20px;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .parrafoproyecto{
+        font-weight: 500;
+        font-size: 1rem;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .sectionproyecto{
+        margin-top: 20px;
+        .h2proyecto{
+            margin-bottom: 20px;
+        }
+    }
+}
+.mainproductos{
+    margin-bottom: 50px;
+    text-align: center;
+    .H1productos{
+        margin-top: 20px;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .parrafoproductos{
+        font-weight: 500;
+        font-size: 1rem;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .h2productos{
+        margin-top: 20px;
+    }
+    .sectionproductos{
+        background-color: rgba(0, 0, 255, 0.041); /*el color de fondo me sirve de ayuda para comprobar los cambios*/
+        width: 90%;
+        margin: 20px auto;
+        .h3productos{
+            /*margin-top: 20px;*/
+            /*margin-bottom: 20px;*/
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .boxproductos{
+            border-radius: 6px 6px 6px 6px;
+            box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+            margin: 0px auto;
+            width: 50%;
+            object-fit: contain;
+            border: 1px solid black;
+        }
+    }
+}
+.maingaleria{
+    margin-bottom: 50px;
+    text-align: center;
+    .H1galeria{
+        margin-top: 20px;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .sectiongaleria{
+        background-color: rgba(0, 0, 255, 0.034);/*el color de fondo me sirve de ayuda para comprobar los cambios*/
+        width: 90%;
+        margin: 50px auto;
+        
+        .boxgaleria{
+            border-radius: 6px 6px 6px 6px;
+            box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+            margin: 20px auto;
+            width: 50%;
+            object-fit: contain;
+            border: 1px solid black;
+        }
+    }
+}
+.maincontactos{
+    margin-bottom: 50px;
+    text-align: center;
+    .sectioncontactos{
+        background-color: rgba(0, 0, 255, 0.034);/*el color de fondo me sirve de ayuda para comprobar los cambios*/
+        width: 90%;
+        margin: 50px auto;
+        .boxcontactos{
+            border-radius: 6px 6px 6px 6px;
+            box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+            margin: 20px auto;
+            width: 50%;
+            object-fit: contain;
+            border: 1px solid black;
+        }
+        .H1contactos{
+            margin-top: 20px;
+            font-size: 3rem;
+            font-weight: 500;
+        }
+        .formcontactos{
+            .divcontactos{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }   
+}
