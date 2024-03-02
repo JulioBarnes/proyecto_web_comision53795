@@ -6,13 +6,16 @@
     <title>MueblesTuc</title>
     <link rel="shortcut icon" href="../mueblestuc.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/feec7331d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="fondoMadera">
+<body class="body fondoMadera">
     <header class="header">
-        <img src="../assests/img/Logo.png" alt="Logo de MueblesTuc">
-        <nav>
-            <ul class="fondoTester">
+        <a href="../index.html">
+            <img class="logo" src="../assests/img/Logo.png" alt="Logo de MueblesTuc">
+        </a>
+        <nav class="navegacion">
+            <ul class="listanavegacion">
                 <li class="links"><a class="anclaheader" href="../index.html">Inicio</a></li>
                 <li class="links"><a class="anclaheader" href="./proyecto.html">Proyecto</a></li>
                 <li class="links"><a class="anclaheader" href="./productos.html">Productos</a></li>
@@ -22,8 +25,8 @@
         </nav>
     </header>
     <main class="maincontactos">
+        <h1 class="H1">Contactanos</h1>
         <section class="sectioncontactos">
-            <h1 class="H1contactos">Contactanos</h1>
             <img class="boxcontactos" src="../assests/img/Imagen de mueble para contactos.jpg" alt="Imagen que muestra en una habitación de una casa, un pequeño escritorio de madera con una computadora portátil encima y un banco de madera">
             <form class="formcontactos" method="post"> <!--dentro de action lo veremos en curso javascript-->
                 <div class="divcontactos">
@@ -58,7 +61,7 @@
     <footer class="footer">
         <section class="sectionfooter">
             <h3 class="h3footer">Redes Sociales</h3>
-                <a href="https://web.whatsapp.com/" target="_blank">
+                <a class="iconowsp" href="https://web.whatsapp.com/" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
@@ -87,5 +90,6 @@
             <p class="parrafofooter">MueblesTuc@gmail.com</p>
         </section>
     </footer>
+    <link rel="stylesheet" href="../js/bootstrap.bundle.min.js">
 </body>
 </html>
