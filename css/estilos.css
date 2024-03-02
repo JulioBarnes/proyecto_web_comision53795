@@ -4,49 +4,23 @@
     margin: 0;
     padding: 0;
 }
+.fondoMadera{
+    background-color: rgb(247, 194, 126);
+}
 .header{
-    position: sticky;
-    top:0;
     background-color: rgba(68, 51, 16, 0.712);
-    padding: 10px;
     .logo{
         width: 100px;
     }
 }
-.fondoMadera{
-    background-color: rgb(247, 194, 126);
-}
-
-.listanavegacion{
-    margin-right: 20px;
-    text-align: right;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    .links{
-        display: inline-block;
-        margin-left: 7px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    .anclaheader{
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 1.1rem;
-    }
-}
 .footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     background-color: rgba(68, 51, 16, 0.479);
-    text-align: center;
+    font-size: 2.5rem;
     .sectionfooter{
-        text-align: start;
         margin-top: 20px;
         margin-bottom: 20px;
         .h3footer{
             margin-bottom: 20px;
-            font-weight: bold;
             font-size: 1.5rem;
         }
         .parrafofooter{
@@ -65,15 +39,12 @@
     }
     .fa-instagram{    
         color: rgb(194, 36, 128);
-        font-size: 2.5rem;
     }
     .fa-facebook{
         color: blue;
-        font-size: 2.5rem;
     }
     .fa-youtube{
         color: red;
-        font-size: 2.5rem;
     }
 }
 .H1{
@@ -86,28 +57,25 @@
     margin-bottom: 50px;
     text-align: center;
     .mainsection{
-        /*background-color: rgba(22, 255, 1, 0.473);*/
         display: flex;
         flex-direction: row;
-        row-gap: 10px;/**/
+        row-gap: 10px;
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-evenly;
         .maindiv{
             background-color: rgba(128, 128, 128, 0.514);
-            /*width: 50%;*/
-            /**/border-radius: 6px 6px 6px 6px;
+            border-radius: 6px 6px 6px 6px;
             box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
             margin: 20px auto;
             width: 40%;
             object-fit: contain;
-            border: 1px solid rgba(0, 0, 0, 0.096);/**/
+            border: 1px solid rgba(0, 0, 0, 0.096);
             .h2index{
                 text-decoration: underline;
                 margin-top: 20px;
              }
             .parrafoindex{
-                /*font-weight: 500;*/
                 font-size: 1.1rem;
                 width: 50%;
                 margin: 0 auto;
@@ -148,12 +116,10 @@
         margin-top: 20px;
     }
     .sectionproductos{
-        background-color: rgba(0, 0, 255, 0.041); /*el color de fondo me sirve de ayuda para comprobar los cambios*/
+        background-color: rgba(0, 0, 255, 0.041);
         width: 90%;
         margin: 20px auto;
         .h3productos{
-            /*margin-top: 20px;*/
-            /*margin-bottom: 20px;*/
             padding-top: 20px;
             padding-bottom: 20px;
         }
@@ -189,7 +155,7 @@
     margin-bottom: 50px;
     text-align: center;
     .sectioncontactos{
-        background-color: rgba(0, 0, 255, 0.034);/*el color de fondo me sirve de ayuda para comprobar los cambios*/
+        background-color: rgba(0, 0, 255, 0.034);
         width: 90%;
         margin: 50px auto;
         .boxcontactos{

@@ -10,19 +10,36 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body class="body fondoMadera">
-    <header class="header">
-        <a href="#">
-            <img class="logo" src="./assests/img/Logo.png" alt="Logo de MueblesTuc">
-        </a>
-        <nav class="navegacion">
-            <ul class="listanavegacion">
-                <li class="links"><a class="anclaheader" href="#">Inicio</a></li>
-                <li class="links"><a class="anclaheader" href="./pages/proyecto.html">Proyecto</a></li>
-                <li class="links"><a class="anclaheader" href="./pages/productos.html">Productos</a></li>
-                <li class="links"><a class="anclaheader" href="./pages/galeria.html">Galería</a></li>
-                <li class="links"><a class="anclaheader" href="./pages/contactos.html">Contactos</a></li>
-            </ul>
-        </nav>
+    <header class="header p-3 position-sticky top-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="#">
+                    <img class="logo" src="./assests/img/Logo.png" alt="Logo de MueblesTuc">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="listanavegacion navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link text-white" href="./pages/proyecto.html">Proyecto</a>
+                        </li>
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link text-white" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link text-white" href="./pages/galeria.html">Galería</a>
+                        </li>
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link text-white" href="./pages/contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
     </header>
     <main class="mainindex">
         <h1 class="H1">Muebles Únicos</h1>
@@ -41,29 +58,29 @@
             </div>
             <div class="maindiv">
                 <h2 class="h2index">Fidelidad</h2>
-                <p class="parrafoindex">La satisfacción de nuestros clientes con nuestros resultados siempre son la mejor garantía y aval para nuestros futuros proyectos.</p>
+                <p class="parrafoindex">La satisfacción de nuestros clientes con nuestros resultados siempre son la mejor garantía y aval para futuros proyectos.</p>
             </div>
         </section>
         
     </main>
-    <footer class="footer">
-        <section class="sectionfooter">
+    <footer class="footer d-flex flex-row justify-content-evenly text-center">
+        <section class="sectionfooter text-start">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4357.225662869664!2d-65.13113981124906!3d-26.850472005391147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d2a4678c211%3A0xc9e71c934173c045!2sLos%20Ceibos%2C%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1706934438235!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section class="sectionfooter">
-            <h3 class="h3footer">Ubicación</h3>
+        <section class="sectionfooter text-start">
+            <h3 class="h3footer fw-bold">Ubicación</h3>
             <p class="parrafofooter">Manzana Nº13, Alt. 123</p>
             <p class="parrafofooter">Barrio Lotear</p>
             <p class="parrafofooter">Cevil Pozo</p>
             <p class="parrafofooter">Tucumán, Argentina</p>
         </section>
-        <section class="sectionfooter">
-            <h3>Contactos</h3>
-            <p>Tel.: 3816000000</p>
+        <section class="sectionfooter text-start">
+            <h3 class="h3footer fw-bold">Contactos</h3>
+            <p class="parrafofooter">Tel.: 3816000000</p>
             <p class="parrafofooter">Mail: MueblesTuc@gmail.com</p>
         </section>
-        <section class="sectionfooter">
-            <h3 class="h3footer">Redes Sociales</h3>
+        <section class="sectionfooter text-start">
+            <h3 class="h3footer fw-bold">Redes Sociales</h3>
                 <a class="iconowsp" href="https://web.whatsapp.com/" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
@@ -78,6 +95,6 @@
                 </a>               
         </section>
     </footer>
-    <link rel="stylesheet" href="./js/bootstrap.bundle.min.js">
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
