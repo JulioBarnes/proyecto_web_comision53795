@@ -9,58 +9,83 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="body fondoMadera">
-    <header class="header">
-        <a href="../index.html">
-            <img class="logo" src="../assests/img/Logo.png" alt="Logo de MueblesTuc">
-        </a>
-        <nav class="navegacion">
-            <ul class="listanavegacion">
-                <li class="links"><a class="anclaheader" href="../index.html">Inicio</a></li>
-                <li class="links"><a class="anclaheader" href="./proyecto.html">Proyecto</a></li>
-                <li class="links"><a class="anclaheader" href="./productos.html">Productos</a></li>
-                <li class="links"><a class="anclaheader" href="./galeria.html">Galería</a></li>
-                <li class="links"><a class="anclaheader" href="./contactos.html">Contactos</a></li>
-            </ul>
-        </nav>
+<body class="fondoMadera">
+    <header class="header p-3 position-sticky top-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="../index.html">
+                    <img class="logo" src="../assests/img/Logo.png" alt="Logo de MueblesTuc">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="listanavegacion navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link text-white" href="./proyecto.html">Proyecto</a>
+                        </li>
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link text-white" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link text-white" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="links ms-1 pb-0 nav-item">
+                            <a class="anclaheader nav-link text-white" href="./contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
     </header>
-    <main class="maincontactos">
-        <h1 class="H1">Contactanos</h1>
-        <section class="sectioncontactos">
+    <main class="my-5">
+        <h1 class="H1 text-center">Contactanos</h1>
+        <section class="my-5 mx-auto d-flex flex-column align-items-center flex-sm-row-reverse justify-content-sm-between sectioncontactos">
             <img class="boxcontactos" src="../assests/img/Imagen de mueble para contactos.jpg" alt="Imagen que muestra en una habitación de una casa, un pequeño escritorio de madera con una computadora portátil encima y un banco de madera">
-            <form class="formcontactos" method="post"> <!--dentro de action lo veremos en curso javascript-->
-                <div class="divcontactos">
-                    <label for="name">Nombre y Apellido: </label>
-                    <input type="text" placeholder="Nombre completo" id="name" name="name" required>
+            <form class="m-4 text-start" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre y Apellido:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre completo">
                 </div>
-                <div class="divcontactos">
-                    <label for="email">Email: </label>
-                    <input type="email" placeholder="ejemplo@mail.com" id="email" name="email" required>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
                 </div>
-                <div class="divcontactos">
-                    <label for="tel">Teléfono de contacto: </label>
-                    <input type="text" placeholder="0123456789" id="tel" name="tel" required>
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Teléfono de contacto:</label>
+                    <input type="text" class="form-control" id="tel" name="tel" placeholder="0123456789" required>
                 </div>
-                <div class="divcontactos">
-                    <label for="comentario">Comentanos tu consulta</label>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese su consulta">
-                    </textarea>
-                </div>
-                <!--Ejempl de input para contraseñas
-                    <div>
-                        <label for="pass">Contraseña: </label>
-                        <input type="password" id="pass" name="pass" placeholder="Contraseña"   required>
-                    </div>-->
-                <div>
-                    <input type="reset" value="Limpiar">
-                    <input type="submit" value="Confirmar">
+                <div class="mb-3">
+                    <label for="consulta" class="form-label">Escribenos tu consulta:</label>
+                    <textarea class="form-control" id="consulta" name="consulta" rows="3"></textarea>
+                    <input class="m-2 p-2" type="reset" value="Limpiar">
+                    <input class="m-2 p-2" type="submit" value="Confirmar">
                 </div>
             </form>
         </section>
     </main>
-    <footer class="footer">
-        <section class="sectionfooter">
-            <h3 class="h3footer">Redes Sociales</h3>
+    <footer class="footer container-fluid text-center">
+        <section class="row justify-content-evenly sectionfooter text-start ">
+            <div class="col-12 col-md-5 m-1 p-2">
+                <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4357.225662869664!2d-65.13113981124906!3d-26.850472005391147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d2a4678c211%3A0xc9e71c934173c045!2sLos%20Ceibos%2C%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1706934438235!5m2!1ses!2sar"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-12 col-md-5 m-1 p-2">
+                <h3 class="h3footer mb-2 fw-bold">Ubicación</h3>
+                <p class="parrafofooter pb-2">Manzana Nº13, Alt. 123</p>
+                <p class="parrafofooter pb-2">Barrio Lotear</p>
+                <p class="parrafofooter pb-2">Cevil Pozo</p>
+                <p class="parrafofooter pb-2">Tucumán, Argentina</p>
+            </div>
+            <div class="col-12 col-md-5 m-1 p-2">
+                <h3 class="h3footer mb-2 fw-bold">Contactos</h3>
+                <p class="parrafofooter pb-2">Tel.: 3816000000</p>
+                <p class="parrafofooter pb-2">Mail: MueblesTuc@gmail.com</p>
+            </div>
+            <div class="col-12 col-md-5 m-1 p-2">
+                <h3 class="h3footer mb-2 fw-bold">Redes Sociales</h3>
                 <a class="iconowsp" href="https://web.whatsapp.com/" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
@@ -72,24 +97,10 @@
                 </a>
                 <a href="https://www.youtube.com/" target="_blank">
                     <i class="fa-brands fa-youtube"></i>
-                </a>               
-        </section>
-        <section class="sectionfooter">
-            <h3 class="h3footer">Ubicación</h3>
-            <p class="parrafofooter">Chingolo 123</p><!--Barrio Lotear, Cevil Pozo, Tucumán, Argentina.-->
-            <p class="parrafofooter">Barrio Lotear</p>
-            <p class="parrafofooter">Cevil Pozo</p>
-            <p class="parrafofooter">Tucumán, Argentina</p>
-            <!--<p>Barrio Lotear</p>
-            <p>Argentina, Tucumán, Cevil Pozo</p>-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4357.225662869664!2d-65.13113981124906!3d-26.850472005391147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d2a4678c211%3A0xc9e71c934173c045!2sLos%20Ceibos%2C%20Yerba%20Buena%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1706934438235!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section class="sectionfooter">
-            <h3>Contactos</h3>
-            <p>3816000000</p>
-            <p class="parrafofooter">MueblesTuc@gmail.com</p>
+                </a>
+            </div>
         </section>
     </footer>
-    <link rel="stylesheet" href="../js/bootstrap.bundle.min.js">
+    <script defer src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
