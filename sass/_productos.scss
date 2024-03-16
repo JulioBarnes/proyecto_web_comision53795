@@ -1,0 +1,35 @@
+/*intente usar @extend pero media queries no me lo permite por lo que hago uso de su notacion en css para mantener funcional el queries*/
+.boxcontainer, .boxcontainerdesktop{
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+    width: 90%;
+    object-fit: contain;
+    border: $boxbordernegro;
+    /*overflow: hidden;
+    transition: 1s;*/
+}
+/*.boxcontainerdesktop:hover{
+    transform: scale(1.5);
+}*/
+/*@media(max-width:576px){
+    .boxcontainer, .boxcontainerdesktop{
+        border-radius: 6px 6px 6px 6px;
+        box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+        width: 90%;
+        object-fit: contain;
+        border: $boxbordernegro;
+    }
+}*/
+@media(min-width: 577px) and (max-width: 1900px){
+    .boxcontainerdesktop{
+        width: 60%;
+        /*border-radius: 6px 6px 6px 6px;
+        box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+        object-fit: contain;
+        border: $boxbordernegro;*/
+    }
+}
+.sectionproductos{
+    background-color:$fondosombra;
+    width: 90%;
+}

@@ -1,187 +1,239 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
-*{  
-    font-family: 'Ubuntu', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+  /*overflow-x: hidden;*/
 }
-.fondoMadera{
-    background-color: rgb(247, 194, 126);
+
+.body {
+  background-image: radial-gradient(circle, rgba(68, 51, 16, 0), rgba(108, 85, 41, 0), rgba(152, 119, 67, 0.3411764706), rgba(198, 155, 96, 0.5137254902), rgba(247, 195, 126, 0.5803921569)), url(../assests/img/fondo_madera.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.header{
-    background-color: rgba(68, 51, 16, 0.712);
-    .logo{
-        width: 100px;
-    }
+
+@media (max-width: 576px) {
+  .body {
+    background-image: radial-gradient(circle, rgba(68, 51, 16, 0), rgba(108, 85, 41, 0), rgba(152, 119, 67, 0.3411764706), rgba(198, 155, 96, 0.5137254902), rgba(247, 195, 126, 0.5803921569)), url(../assests/img/fondo_madera_mobile.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
-.h3footer{
-    font-size: 1.5rem;
+.fondoMadera {
+  background-color: #f7c27e;
 }
-.parrafofooter{
-    font-size: 1.1rem;
+
+.header {
+  background-color: rgba(68, 51, 16, 0.478);
 }
-.footer{
-    background-color: rgba(68, 51, 16, 0.479);
-    font-size: 2.5rem;
-    .sectionfooter{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .iconowsp{
-        position: fixed;
-        bottom:10px;
-        right: 10px;
-        .fa-whatsapp{
-            color: green;
-            font-size: 4rem;
-        }
-    }
-    .fa-instagram{    
-        color: rgb(194, 36, 128);
-    }
-    .fa-facebook{
-        color: blue;
-    }
-    .fa-youtube{
-        color: red;
-    }
+.header .logo {
+  width: 45px;
+  height: 50px;
 }
-.H1{
-    font-size: 3rem;
-    font-weight: 500;
+
+.parrafo {
+  font-size: 1.1rem;
 }
-@media (max-width: 576px){
-    .maindiv{
-        background-color: rgba(128, 128, 128, 0.514);
-        border-radius: 6px 6px 6px 6px;
-        box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
-        border: 1px solid rgba(0, 0, 0, 0.096);
-        width: auto;
-    }
+
+.parrafo span {
+  font-style: italic;
+}
+
+.parrafonegrita {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.parrafonegrita span {
+  font-style: italic;
+}
+
+.footer {
+  background-color: rgba(68, 51, 16, 0.478);
+  font-size: 2.5rem;
+}
+.footer .sectionfooter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer .sectionfooter .h3footer {
+  font-size: 1.5rem;
+}
+.footer .iconowsp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.footer .iconowsp .fa-whatsapp {
+  color: green;
+  font-size: 4rem;
+}
+.footer .fa-instagram {
+  color: rgb(194, 36, 128);
+}
+.footer .fa-facebook {
+  color: blue;
+}
+.footer .fa-youtube {
+  color: red;
+}
+
+.H1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+/*Intento de uso de @extend en main de index pero dentro de media queries no se permite @extend*/
+/*.indexmainsection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around; 
+}
+.indexmainsectiondesktop{
+    @extend .indexmainsection;
+    flex-direction: row;
+}*/
+@media (max-width: 576px) {
+  .maindiv {
+    background-color: rgba(128, 128, 128, 0.514);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 7px 31px 0px rgba(0, 0, 0, 0.53);
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    width: auto;
+  }
 }
 @media (min-width: 577px) and (max-width: 1900px) {
-    .maindiv{
-        background-color: rgba(128, 128, 128, 0.514);
-        border-radius: 6px 6px 6px 6px;
-        box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
-        border: 1px solid rgba(0, 0, 0, 0.096);
-        width: 40%;
-    }
+  .maindiv {
+    background-color: rgba(128, 128, 128, 0.514);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 7px 31px 0px rgba(0, 0, 0, 0.53);
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    width: 40%;
+  }
 }
-.parrafoindex{
-    font-size: 1.1rem;
+@media (max-width: 576px) {
+  .divsectionproyecto {
+    height: 33vh;
+  }
 }
-.parrafoproyecto{
-    font-weight: 500;
-    font-size: 1rem;
+@media (min-width: 577px) and (max-width: 1900px) {
+  .divsectionproyecto {
+    height: 70vh;
+  }
 }
-@media(max-width: 576px){
-    .divsectionproyecto{
-        height: 33vh;
-    }
+/*intente usar @extend pero media queries no me lo permite por lo que hago uso de su notacion en css para mantener funcional el queries*/
+.boxcontainer, .boxcontainerdesktop {
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 3px 7px 31px 0px rgba(0, 0, 0, 0.53);
+  width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid black;
+  /*overflow: hidden;
+  transition: 1s;*/
 }
-@media(min-width: 577px) and (max-width: 1900px){
-    .divsectionproyecto{
-        height: 70vh;
-    }
-}
-.parrafoproductos{
-    font-weight: 500;
-    font-size: 1rem;
-}
-@media(max-width:576px){
-    .boxproductos{
+
+/*.boxcontainerdesktop:hover{
+    transform: scale(1.5);
+}*/
+/*@media(max-width:576px){
+    .boxcontainer, .boxcontainerdesktop{
         border-radius: 6px 6px 6px 6px;
         box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
         width: 90%;
         object-fit: contain;
-        border: 1px solid black;
+        border: $boxbordernegro;
     }
+}*/
+@media (min-width: 577px) and (max-width: 1900px) {
+  .boxcontainerdesktop {
+    width: 60%;
+    /*border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+    object-fit: contain;
+    border: $boxbordernegro;*/
+  }
 }
-@media(min-width: 577px) and (max-width: 1900px){
-    .boxproductos{
-        border-radius: 6px 6px 6px 6px;
-        box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
-        width: 60%;
-        object-fit: contain;
-        border: 1px solid black;
-    }
+.sectionproductos {
+  background-color: rgba(0, 0, 255, 0.034);
+  width: 90%;
 }
-.sectionproductos{
-    background-color: rgba(0, 0, 255, 0.041);
-    width: 90%;
+
+.sectiongaleria {
+  background-color: rgba(0, 0, 255, 0.034);
+  width: 90%;
+  display: grid;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-items: center;
+  align-items: auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas: "img01 img01 img01 img03 img03 img03" "img01 img01 img01 img03 img03 img03" "img02 img02 img02 img03 img03 img03" "img02 img02 img02 img03 img03 img03" "img05 img05 img05 img04 img04 img04" "img05 img05 img05 img04 img04 img04" "img05 img05 img05 img06 img06 img06" "img05 img05 img05 img06 img06 img06";
 }
-.sectiongaleria{
+.sectiongaleria .img01 {
+  grid-area: img01;
+}
+.sectiongaleria .img02 {
+  grid-area: img02;
+}
+.sectiongaleria .img03 {
+  align-self: center;
+  grid-area: img03;
+}
+.sectiongaleria .img04 {
+  grid-area: img04;
+}
+.sectiongaleria .img05 {
+  align-self: center;
+  grid-area: img05;
+}
+.sectiongaleria .img06 {
+  grid-area: img06;
+}
+.sectiongaleria .boxcontainer {
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 3px 7px 31px 0px rgba(0, 0, 0, 0.53);
+  width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid black;
+}
+
+@media (max-width: 576px) {
+  .sectioncontactos {
     background-color: rgba(0, 0, 255, 0.034);
+    width: 95%;
+  }
+  .sectioncontactos .boxcontactos {
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 7px 31px 0px rgba(0, 0, 0, 0.53);
+    margin: 20px 20px;
+    height: 70vh;
     width: 90%;
-    display: grid;
-    row-gap: 20px;
-    column-gap: 20px;
-    justify-items:center;
-    align-items: auto;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: 
-        "img01 img01 img01 img03 img03 img03"
-        "img01 img01 img01 img03 img03 img03"
-        "img02 img02 img02 img03 img03 img03"
-        "img02 img02 img02 img03 img03 img03"
-        "img05 img05 img05 img04 img04 img04"
-        "img05 img05 img05 img04 img04 img04"
-        "img05 img05 img05 img06 img06 img06"
-        "img05 img05 img05 img06 img06 img06";
-    .img01{
-        grid-area: img01;
-    }
-    .img02{
-        grid-area: img02;
-    }
-    .img03{
-        align-self: center;
-        grid-area: img03;
-    }
-    .img04{
-        grid-area: img04;
-    }
-    .img05{
-        align-self: center;
-        grid-area: img05;
-    }
-    .img06{
-        grid-area: img06;
-    }
-    .boxgaleria{
-        border-radius: 6px 6px 6px 6px;
-        box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
-        width: 90%;
-        object-fit: contain;
-        border: 1px solid black;
-    }
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 1px solid black;
+  }
 }
-@media(max-width: 576px) {
-    .sectioncontactos{
-        background-color: rgba(0, 0, 255, 0.034);
-        width: 95%;
-        .boxcontactos{
-            border-radius: 6px 6px 6px 6px;
-            box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
-            margin: 20px 20px;
-            height: 70vh;
-            width: 90%;
-            object-fit: cover;
-            border: 1px solid black;
-        }
-    }
-}
-@media(min-width: 577px) and (max-width: 1900px){
-    .sectioncontactos{
-        background-color: rgba(0, 0, 255, 0.034);
-        width: 95%;
-        .boxcontactos{
-            border-radius: 6px 6px 6px 6px;
-            box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
-            margin: 20px 20px;
-            height: 70vh;
-            width: 50%;
-            object-fit: cover;
-            border: 1px solid black;
-        }
-    }
-}
+@media (min-width: 577px) and (max-width: 1900px) {
+  .sectioncontactos {
+    background-color: rgba(0, 0, 255, 0.034);
+    width: 95%;
+  }
+  .sectioncontactos .boxcontactos {
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 7px 31px 0px rgba(0, 0, 0, 0.53);
+    margin: 20px 20px;
+    height: 70vh;
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 1px solid black;
+  }
+}/*# sourceMappingURL=estilos.css.map */

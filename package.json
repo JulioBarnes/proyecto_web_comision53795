@@ -1,0 +1,19 @@
+{
+  "name": "vsc-pre-entrega2-bs-git",
+  "version": "1.0.0",
+  "description": "proyecto Julio Barnes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioBarnes/proyecto_web_comision53795.git"
+  },
+  "author": "Julio Barnes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulioBarnes/proyecto_web_comision53795/issues"
+  },
+  "homepage": "https://github.com/JulioBarnes/proyecto_web_comision53795#readme"
+}

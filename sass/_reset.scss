@@ -1,0 +1,76 @@
+*{  
+    font-family: 'Ubuntu', sans-serif;
+    /*overflow-x: hidden;*/
+}
+.body{
+    background-image: radial-gradient(circle, #44331000, #6c552900, #98774357, #c69b6083, #f7c37e94), url(../assests/img/fondo_madera.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 576px){
+    .body{
+        background-image: radial-gradient(circle, #44331000, #6c552900, #98774357, #c69b6083, #f7c37e94), url(../assests/img/fondo_madera_mobile.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+.fondoMadera{
+    background-color: $fondoMadera
+}
+.header{
+    background-color: $header-footer-color;
+    .logo{
+        width: 45px;
+        height: 50px;
+    }
+}
+.parrafo{
+    font-size: $parrafosize;
+}
+.parrafo span{
+    font-style: italic;
+}
+.parrafonegrita{
+    font-weight: $negrita;
+    font-size: $parrafosize;
+}
+.parrafonegrita span{
+    font-style: italic;
+}
+.footer{
+    background-color: $header-footer-color;
+    font-size: 2.5rem;
+    .sectionfooter{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .h3footer{
+            font-size: 1.5rem;
+        }
+    }
+    .iconowsp{
+        position: fixed;
+        bottom:10px;
+        right: 10px;
+        .fa-whatsapp{
+            color: map-get($redes , whatsapp);
+            font-size: 4rem;
+        }
+    }
+    .fa-instagram{    
+        color: map-get($redes , instagram);
+    }
+    .fa-facebook{
+        color:map-get($redes , facebook);
+    }
+    .fa-youtube{
+        color:map-get($redes , youtube);
+    }
+}
+.H1{
+    font-size: 3rem;
+    font-weight: $negrita;
+}

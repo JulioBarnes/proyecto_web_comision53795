@@ -1,0 +1,47 @@
+.sectiongaleria{
+    background-color:$fondosombra;
+    width: 90%;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-items:center;
+    align-items: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+        "img01 img01 img01 img03 img03 img03"
+        "img01 img01 img01 img03 img03 img03"
+        "img02 img02 img02 img03 img03 img03"
+        "img02 img02 img02 img03 img03 img03"
+        "img05 img05 img05 img04 img04 img04"
+        "img05 img05 img05 img04 img04 img04"
+        "img05 img05 img05 img06 img06 img06"
+        "img05 img05 img05 img06 img06 img06";
+    .img01{
+        grid-area: img01;
+    }
+    .img02{
+        grid-area: img02;
+    }
+    .img03{
+        align-self: center;
+        grid-area: img03;
+    }
+    .img04{
+        grid-area: img04;
+    }
+    .img05{
+        align-self: center;
+        grid-area: img05;
+    }
+    .img06{
+        grid-area: img06;
+    }
+    .boxcontainer{
+        border-radius: 6px 6px 6px 6px;
+        box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+        width: 90%;
+        object-fit: contain;
+        border: $boxbordernegro;
+    }
+}

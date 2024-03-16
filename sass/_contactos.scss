@@ -1,0 +1,30 @@
+@media(max-width: 576px) {
+    .sectioncontactos{
+        background-color: $fondosombra;
+        width: 95%;
+        .boxcontactos{
+            border-radius: 6px 6px 6px 6px;
+            box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+            margin: 20px 20px;
+            height: 70vh;
+            width: 90%;
+            object-fit: cover;
+            border: $boxbordernegro;
+        }
+    }
+}
+@media(min-width: 577px) and (max-width: 1900px){
+    .sectioncontactos{
+        background-color: $fondosombra;
+        width: 95%;
+        .boxcontactos{
+            border-radius: 6px 6px 6px 6px;
+            box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+            margin: 20px 20px;
+            height: 70vh;
+            width: 50%;
+            object-fit: cover;
+            border: $boxbordernegro;
+        }
+    }
+}
