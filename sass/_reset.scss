@@ -22,6 +22,7 @@
     background-color: $fondoMadera
 }
 .header{
+    z-index: 9;
     background-color: $header-footer-color;
     .logo{
         width: 45px;
