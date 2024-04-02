@@ -1,9 +1,8 @@
 *{  
     font-family: 'Ubuntu', sans-serif;
-    /*overflow-x: hidden;*/
 }
 .body{
-    background-image: radial-gradient(circle, #44331000, #6c552900, #98774357, #c69b6083, #f7c37e94), url(../assests/img/fondo_madera.jpg);
+    background-image: radial-gradient(circle, #44331000, #6c552900, #98774357, #c69b6083, #f7c37e94), url(../assests/img/fondo_madera.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -11,7 +10,7 @@
 }
 @media (max-width: 576px){
     .body{
-        background-image: radial-gradient(circle, #44331000, #6c552900, #98774357, #c69b6083, #f7c37e94), url(../assests/img/fondo_madera_mobile.jpg);
+        background-image: radial-gradient(circle, #44331000, #6c552900, #98774357, #c69b6083, #f7c37e94), url(../assests/img/fondo_madera_mobile.webp);
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
@@ -28,9 +27,14 @@
         width: 45px;
         height: 50px;
     }
+    .anclaheader:hover{
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 10%;
+    }
 }
 .parrafo{
     font-size: $parrafosize;
+    text-align: start;
 }
 .parrafo span{
     font-style: italic;
@@ -38,6 +42,7 @@
 .parrafonegrita{
     font-weight: $negrita;
     font-size: $parrafosize;
+    text-align: start;
 }
 .parrafonegrita span{
     font-style: italic;
@@ -52,6 +57,19 @@
             font-size: 1.5rem;
         }
     }
+    .singuion{
+        text-decoration: none;
+    }
+    /*Esta clase es esclusivamente para ponerle un fondo al ícono de wsp de fontawesome y pueda contrastar con el resto de la pag.*/
+    .fondoiconwsp{
+        width: 48px;
+        height: 46px;
+        background-color: rgba(255, 255, 255, 0.616);
+        border-radius: 50%;
+        position: fixed;
+        bottom:25px;
+        right: 17px;
+    }
     .iconowsp{
         position: fixed;
         bottom:10px;
@@ -60,8 +78,12 @@
             color: map-get($redes , whatsapp);
             font-size: 4rem;
         }
+        .fa-square-whatsapp{
+            color: map-get($redes , whatsapp);
+            font-size: 4rem;
+        }
     }
-    .fa-instagram{    
+    .fa-instagram{
         color: map-get($redes , instagram);
     }
     .fa-facebook{

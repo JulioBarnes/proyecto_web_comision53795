@@ -1,15 +1,3 @@
-/*Intento de uso de @extend en main de index pero dentro de media queries no se permite @extend*/
-/*.indexmainsection{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around; 
-}
-.indexmainsectiondesktop{
-    @extend .indexmainsection;
-    flex-direction: row;
-}*/
 @media (max-width: 576px){
     .maindiv{
         background-color:$maindiv;
@@ -18,8 +6,11 @@
         border: $boxbordersuave;
         width: auto;
     }
+    .indexflexible{
+        @include flexible(column);
+    }
 }
-@media (min-width: 577px) and (max-width: 1900px) {
+@media (min-width: 577px) and (max-width: 1300px) {
     .maindiv{
         background-color:$maindiv;
         border-radius: 6px 6px 6px 6px;
@@ -27,4 +18,16 @@
         border: $boxbordersuave;
         width: 40%;
     }
+}
+@media(min-width: 1301px) and (max-width: 1900px){
+    .maindiv{
+        background-color:$maindiv;
+        border-radius: 6px 6px 6px 6px;
+        box-shadow: 3px 7px 31px 0px rgba(0,0,0,0.53);
+        border: $boxbordersuave;
+        width: 40%;
+    }
+}
+.indexflexible{
+    @include flexible(row,space-evenly);
 }
